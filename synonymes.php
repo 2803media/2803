@@ -14,7 +14,7 @@ while ($var = mysql_fetch_array($result) ) {
 $output = strtr($description, $synonymes);
 echo $output;
 echo '<p></p>';
-$descriptionspin = spin($description, false);
+$descriptionspin = spin($output, false);
 	
 echo $descriptionspin;
 echo '<hr>';
